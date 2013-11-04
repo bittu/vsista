@@ -6,8 +6,59 @@ html, body {
 	padding: 0;
 }
 
-body {
+.centeredLoader {
+	position: absolute;
+	top: 25%;
+	left: 30%;
+}
+
+#la-anim-6-loader {
+	fill: #848383;
+	fill-opacity: 0.05;
+}
+
+#la-anim-6-border {
+	fill: #EC008C;
+	fill-opacity: 0.05;
+}
+
+.pt-page-moveFromBottom {
+	-webkit-animation: moveFromBottom .6s ease both;
+	-moz-animation: moveFromBottom .6s ease both;
+	animation: moveFromBottom .6s ease both;
+}
+
+.pt-page-scaleDown {
+	-webkit-animation: scaleDown .7s ease both;
+	-moz-animation: scaleDown .7s ease both;
+	animation: scaleDown .7s ease both;
+}
+
+@-webkit-keyframes scaleDown {
+	to { opacity: 0; -webkit-transform: scale(.8); }
+}
+@-moz-keyframes scaleDown {
+	to { opacity: 0; -moz-transform: scale(.8); }
+}
+@keyframes scaleDown {
+	to { opacity: 0; transform: scale(.8); }
+}
+
+@-webkit-keyframes moveFromBottom {
+	from { -webkit-transform: translateY(100%); }
+}
+@-moz-keyframes moveFromBottom {
+	from { -moz-transform: translateY(100%); }
+}
+@keyframes moveFromBottom {
+	from { transform: translateY(100%); }
+}
+
+#main {
+	display: none;
 	background: #EEE;
+	margin: 0;
+	padding: 0;
 }
 
 .container {
