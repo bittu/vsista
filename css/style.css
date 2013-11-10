@@ -1,3 +1,9 @@
+@font-face {
+	font-family:'swissmade';
+	src:url("swissmade.ttf");
+	font-weight:normal;
+	font-style:normal;
+}
 
 html, body {
 	width: 100%;
@@ -52,13 +58,19 @@ body {
 .content {
 	width: 70%;
 	height: auto;
-	font-family:swissmade, sans-serif;
+	
 	color: #08c
+}
+.content h3 {
+	color: #fff;
+	font-size: 44px;
+	text-shadow: 0 0 10px rgba(255,255,255,0.7);
 }
 .content h3,
 .content p,
 .content button.openseseme {
 	display: none;
+	font-family:swissmade, sans-serif !important;
 }
 
 #main {
